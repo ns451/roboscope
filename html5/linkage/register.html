@@ -1,0 +1,99 @@
+<!DOCTYPE HTML>
+
+<html>
+
+<head>
+  <title>asteroids watchers</title>
+  <link rel="stylesheet" type="text/css"
+  href="../css/style.css"/>
+</head>
+
+<body>
+    <div id="contenedor">
+        <header>
+        <div id="cabecera">
+                  <img src="../images/robo.png" width="950px" height="300" />
+        </div>
+        </header>
+        <nav class="menu_horizontal">
+            <h2 class="costado">Menu horizontal</h2>
+            <ul class="hor">
+            <li><a href="../index.html"><strong>Index</strong></a></li>
+            <li><a href="about.html"><strong>About Us</strong></a></li>
+            <li><a href="help.html"><strong>Help</strong></a></li>
+            <li><a href="#"><strong>Movies</strong></a>
+                <ul>
+                    <li><a href="../videos/secrag.mp4"> Secrag </a></li>
+                    <li><a href="../videos/piano.mp4"> Piano </a></li>
+                    <li><a href="../videos/gorillaz.mp4"> Gorillaz </a></li>
+                    <li><a href="../videos/mov_conejo.ogg"> Conejo </a></li>
+                    <li><a href="../videos/movie.ogg"> Naturaleza </a></li>
+                </ul>
+                </li>
+                <li><a href="register.html"><strong>Register</strong></a></li>
+            </ul>
+        </nav>
+        <nav class="menu_vertical">
+            <h2 class="centreado">Menu vertical</h2>
+            <ul class="ver">
+            <li><a href="asteroid.html"><strong>Asteroids</strong></a></li>
+            <li><a href="telescope.html"><strong>Telescope</strong></a></li>
+            <li><a href="adsfasf"><strong>Software</strong></a></li>
+            <li><a href="#"><strong>Hardware</strong></a>
+                <ul>
+                    <li><a href="videos/secrag.mp4"> Movies </a></li>
+                    <li><a href="picture.html"> Pictures </a></li>
+                   <!-- <li><a href="videos/gorillaz.mp4"> Gorillaz </a></li> -->
+
+                </ul>
+            </li>
+             <li><a href="adsfas"><strong>Links</strong></a></li>
+        </nav>
+
+        <section>
+            <article>
+                <h4 class="centreado">REGISTER</h4>
+                <form action="../controlador/datos.php" method="post">
+            <fieldset>
+            <legend><strong>User Data</strong></legend>
+               <div>
+                    <label>First Name:</label>
+                    <input type="text" placeholder="Enter first name" required autofocus name="name"/>
+               </div>
+               <br>
+               <div>
+                    <label>Last Name:</label>
+                    <input type="text" placeholder="Enter last name" required autofocus name="last_name" required /> <!-- required sirve para cuando se tiene q llenar todo los campos requeridos-->
+               </div>
+               <br>
+               <div>
+                    <label>Email:</label>
+                    <input type="email" placeholder="E-mail" name="correo" required />
+               </div>
+               <br>
+               <div>
+                    <label>Password:</label>
+                    <input type="password" placeholder="Enter your password" name="password" o /><br>
+               </div>
+               <br>
+               <div>
+                    <label>Gender:</label><br>
+                    <input type="radio" name="sexo" value=""/>Male<br>
+                    <input type="radio" name="sexo" />Female<br>
+               </div>
+              <input class="boton_enviar" type="submit" value="Register" />
+            </fieldset>
+          </article>
+            <aside>
+                <h5 class="centreado">Panel Secundario</h5>
+            </aside>
+
+        </section>
+        <footer>
+            <h4 class="centreado">Pie de pagina</h4>
+        </footer>
+    </div>
+
+</body>
+
+</html>

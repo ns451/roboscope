@@ -1,0 +1,272 @@
+body{
+ background-image: url(../images/space.jpg);
+background-attachment: fixed; /*para dejar la imagen fija*/
+}
+
+#contenedor{
+   /* border: 1px solid; */
+    width: 90%;
+    margin: 0 auto;
+}
+#cabecera{
+ margin-left: 0%;
+ margin-top: -30%;
+ margin-bottom: -5%;
+ margin-top: 0%;
+ }
+.costado{
+  text-align: left;
+  margin-left: 3%;
+}
+.centreado{
+  text-align: center;
+  font-size: 30px;
+ }
+ #teoria{
+   text-align: justify;
+ }
+
+header{
+
+    width: 85%;
+    margin:0 auto;
+    color: #FFFFFF;
+   /* border-top-left-radius: 400px /*80px este segumdo dato deforma la elipse*/;
+   /* border-top-right-radius: 400px /*80px*/;
+    /*border-bottom-left-radius: 40px /*80px*/;
+    /*border-bottom-right-radius: 40px /*80px*/;
+       border-radius: 400px 200px; /*cuando se usa dos datos el primer dato hace referencia a la superior e inferior derecha,  el segundo a la superior e inferior izquierda*/
+}
+header > h1{
+  text-align: center;
+  text-shadow: 15px 13px 5px #FFFFFF;
+}
+
+nav.menu_horizontal{
+background-color: #000000;
+   color: #FFFFFF;
+list-style:none;
+position:relative;
+display:block;
+ border: 1px solid;
+  width: 85%;
+  height: 100px;
+  margin-left: 7.5%;
+}
+ul.hor{
+  margin: -5%;
+  margin-left: 34%;
+  padding: 0;
+  width: 100%;
+  clear: both;
+  float: left;
+}
+ul.hor li{
+  display: block;
+  float: left;
+  position: relative;
+  background: #FFFFFF;
+}
+ul.hor a{
+/*estilo de los enlaces */
+color:#fff;
+text-decoration:none;
+font-family:Helvetica, Arial, sans-serif;
+font-size:14px;
+line-height:1.3em;
+padding:10px 14px 8px 16px;
+display:block;
+border: 1px solid #FFFFFF;
+background-color: #414141;
+}
+ul.hor ul{
+  display: none;
+  position: relative;
+  top: 24;
+  left: 0;
+  margin:0;
+  padding: 0;
+  background: #FFFFFF;
+}
+ul.hor li ul{
+/*estilo de los submenus*/
+width: 150px;
+background:#F8F8F8;
+border:1px #ccc solid;
+display:none; /*importante para que los submenus no estén visibles*/
+position:absolute;
+z-index:999;
+margin-top:0px;
+}
+ul.hor li ul li{
+/*estilo a cada uno de los elementos(li) de nuestro submenu*/
+width:100%;
+list-style:none;
+display:block;
+}
+ul.hor li ul li a{
+/*estilo a cada uno de los enlaces de nuestro submenu*/
+color:#21759b;
+font-size:14px;
+line-height:1.3em;
+display:block;
+font-weight:normal;
+padding:8px
+}
+ul.hor li ul li a:hover{
+/*un poco de decoracion a los enlaces de nuestro submenu al estar el cursor sobre ellos con ayuda de el selector :hover */
+background-color:#FFF;
+color:#444;
+text-decoration:underline;
+
+}
+ul.hor li:hover ul{
+/*con este selector definimos que cuando el cursor este sobre un elemento(li) que contenga un elemento(ul) dentro le asigne la propiedad display:block; para que este a su vez pase de invisible a visible*/
+display:block;
+}
+ul.hor li a:hover{
+color:#000000;
+background: url(../images/tierra-01.gif);
+background-repeat: no-repeat;
+background-position: right;
+background-color:#FFFFFF;
+background-size: 60px 40px;
+}
+
+
+nav.menu_vertical{
+   background-color:transparent;
+   color: #FFFFFF;
+    border: 1px solid;
+    width: 20%;
+    margin-left: 7.5%;
+    float: left;
+    height: 300px;
+    position: relative;
+    z-index: 100;
+    top: 10%;
+}
+ul.ver{
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  list-style-type: none;
+  border: 1px solid #FFFFFF;
+}
+ul.ver li{
+  border-bottom: 1px solid #FFFFFF;
+  border-top: 1px solid #FFF;
+  background: #FFFFFF;
+}
+ul.ver a{
+/*estilo de los enlaces */
+color:#fff;
+text-decoration:none;
+font-family:Helvetica, Arial, sans-serif;
+font-size:14px;
+line-height:1.3em;
+padding:10px 14px 8px 16px;
+display:block;
+background-color: #414141;
+}
+ul.ver ul {
+  position: relative;
+  z-index: 597;
+  float: left;
+}
+ul.ver li ul{
+/*estilo de los submenus*/
+width: 150px;
+background:#F8F8F8;
+border:1px #ccc solid;
+display:none; /*importante para que los submenus no estén visibles*/
+position:absolute;
+z-index:999;
+margin-top:0px;
+}
+
+
+ul.ver li ul li{
+/*estilo a cada uno de los elementos(li) de nuestro submenu*/
+width:80%;
+list-style:none;
+display:block;
+}
+ul.ver li ul li a{
+/*estilo a cada uno de los enlaces de nuestro submenu*/
+color:#21759b;
+font-size:14px;
+line-height:1.3em;
+display:block;
+font-weight:normal;
+padding:10px
+}
+ul.ver li ul li a:hover{
+/*un poco de decoracion a los enlaces de nuestro submenu al estar el cursor sobre ellos con ayuda de el selector :hover */
+background-color:#FFF;
+color:#444;
+text-decoration:underline;
+
+}
+ul.ver li:hover ul{
+/*con este selector definimos que cuando el cursor este sobre un elemento(li) que contenga un elemento(ul) dentro le asigne la propiedad display:block; para que este a su vez pase de invisible a visible*/
+display:block;
+}
+ul.ver li a:hover{
+color: #000000;
+background: url(../images/telescopio-01.gif);
+background-repeat: no-repeat;
+background-position: right;
+background-size: 60px 40px;
+}
+
+section{
+    border: 1px solid;
+    width: 65%;
+    height: 1500px;
+    float: left;
+}
+/* PARA CAMBIAR CURSOR EN SECTION
+section:hover{
+  cursor: wait;
+} */
+
+article{
+    border: 1px solid;
+    width: 70%;
+    height: 1490px;
+    float: left;
+    margin-left: 1%;
+    margin-top: 1%;
+    box-shadow: 10px 50px 100px 20px #FFFFFF; /*DIFUMINADO*/
+}
+
+aside{
+    border: 1px solid;
+    width: 27%;
+    height: 1490px;
+    float: left;
+    margin-left: 1%;
+    margin-top: 1%;
+    background-image: url(../images/nino2.jpg);
+    background-position: left;
+    background-repeat: no-repeat;
+}
+
+
+footer{
+   background-color:transparent;
+    border: 1px solid;
+    width: 85%;
+    clear: both;
+    margin-left: 7.5%;
+}
+video{
+  margin-left: 3%;
+ margin-top: 50%;
+}
+input.boton_enviar{
+  margin-left: 45%;
+  text-align: center;
+  margin-bottom: 20px;
+}
